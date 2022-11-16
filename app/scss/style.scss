@@ -51,6 +51,9 @@
   background-position: center;
 
   &__inner {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
     min-height: 100vh;
     font-family: 'Impact', sans-serif;
     text-align: center;
@@ -58,15 +61,21 @@
 
   &__title {
     font-size: 76px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.05em;
     margin-bottom: 10px;
+    text-transform: uppercase;
+    align-self: center;
+    margin-left: 15px;
   }
 
   &__subtitle {
     font-size: 48px;
     margin-bottom: 10px;
+    border-bottom: 1px solid $dark;
+    align-self: center;
+
     span {
-      margin-top: 10px;
+      padding: 10px 0;
       display: block;
       font-size: 34px;
       color: $gold;
@@ -76,7 +85,14 @@
   &__text {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 16px;
-    padding-top: 10px;
+    color: $dark-grey;
+    margin-bottom: 10px;
+  }
+
+  &__arrow {
+    margin-top: auto;
+    margin-bottom: 30px;
+    align-self: center;
   }
 }
 
