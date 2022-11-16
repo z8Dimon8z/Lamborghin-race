@@ -5,22 +5,81 @@
 @import 'libs';
 @import 'mixsin';
 
-.text{
-  font-family: 'Ruda-Black', sans-serif;
-  font-size: 25px;
-  width: 300px;
-  @include line-clamp(3);
+.header {
+  padding-top: 25px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, #D8D4CA 0%, rgba(217, 217, 217, 0) 100%);
 }
 
-.text-footer{
-  font-family: 'OpenSans-Light', sans-serif;
-  font-size: 30px;
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  gap: 0 40px;
+  padding-top: 25px;
+
+  &__item {}
+
+  &__link {
+    color: $dark-grey;
+    font-size: 16px;
+  }
+}
+
+.menu-left {
+  padding-left: 25px;
+}
+
+.logo {
+
+  &__img {}
+}
+
+.menu-right {
+  padding-right: 80px;
+}
+
+.promo {
+  background-image: url('../images/promo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__inner {
+    min-height: 100vh;
+    font-family: 'Impact', sans-serif;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 76px;
+    letter-spacing: 0.02em;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    font-size: 48px;
+    margin-bottom: 10px;
+    span {
+      margin-top: 10px;
+      display: block;
+      font-size: 34px;
+      color: $gold;
+    }
+  }
+
+  &__text {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    padding-top: 10px;
+  }
 }
 
 
 
 @import 'media';
-
-
-
-
